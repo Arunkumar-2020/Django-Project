@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%q7rml1d!brx$81!)m!hwar-_2!)+(^din6khp1vr-%=#&qciw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['protosem-blog-app.herokuapp.com']
 
