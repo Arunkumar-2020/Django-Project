@@ -24,7 +24,7 @@ SECRET_KEY = '%q7rml1d!brx$81!)m!hwar-_2!)+(^din6khp1vr-%=#&qciw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://protosem-blog-app.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://protosem-blog-app.herokuapp.com/']
 
 # Application definition
 
