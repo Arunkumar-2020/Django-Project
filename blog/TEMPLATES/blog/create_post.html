@@ -1,0 +1,23 @@
+{% extends "blog/index.html" %}
+{% load crispy_forms_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create post</title>
+</head>
+<body>
+{%  block content %}
+     {% load crispy_forms_tags %}
+
+    <div style="align-content: center">
+        <form action="" method="POST" enctype="multipart/form-data" style="width: 300px; margin: 0 auto;">
+             {{ form | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success" id="side">Post</button> <br><br>
+        </form>
+    </div>
+    <br>
+{% endblock %}
+</body>
+</html>

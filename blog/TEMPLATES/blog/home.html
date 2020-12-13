@@ -1,0 +1,32 @@
+{% extends "blog/index.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+     <style>.posted { border: solid;  padding: 40px;  margin-top: 10px}</style>
+</head>
+
+<body >
+
+{%  block content %}
+{% for post in posts %}
+    <div style="padding-left:10px; padding-bottom: 10px; border: 2px solid; border-radius: 20px; background-color: lavender ;" class="posted">
+
+        <h3 style="text-align: center; "> {{ post.title }}</h3> <hr>
+        <h5 style="font-family: 'Arial Black';"> {{ post.author }}</h5>
+        <p > {{ post.description }}</p>
+
+        {%  if post.image %}
+            <img src="{{  post.image.url }}" style="width:400px;height: 400px;align-items: center ">
+        {%  endif  %}
+        <p>  {{ post.date_posted }}</p>
+
+
+    </div>
+       <br>
+{%  endfor  %}
+{%  endblock %}
+</body>
+</html>
